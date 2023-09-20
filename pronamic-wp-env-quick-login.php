@@ -58,23 +58,34 @@ add_action( 'login_footer', function() {
 			margin: auto;
 			padding-bottom: 24px;
 		}
+
+		#pronamic-icon {
+			border-radius: 50%;
+			display: block;
+			margin: auto;
+		}
 	</style>
 
+
 	<div id="pronamic-one-click-login">
+		<img id="pronamic-icon" src="<?php echo esc_url( plugins_url( 'images/pronamic-icon-bg-orange-color-white-25pct-margin.svg', __FILE__ ) ); ?>" alt="Pronamic `wp-env` Quick Login" width="84" height="84" />
+
 		<form method="post" action="">
 			<div>
 				<label for="pronamic-login-user">One-click login</label>
 
-				<?php
+				<div>
+					<?php
 
-				wp_dropdown_users(
-					[
-						'name' => 'pronamic_auto_login',
-						'id'   => 'pronamic-login-user',
-					]
-				);
+					wp_dropdown_users(
+						[
+							'name' => 'pronamic_auto_login',
+							'id'   => 'pronamic-login-user',
+						]
+					);
 
-				?>
+					?>
+				</div>
 			</div>
 
 			<button class="button button-primary button-large" type="submit">Log In</button>
