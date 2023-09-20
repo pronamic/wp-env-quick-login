@@ -1,6 +1,30 @@
-# Pronamic `wp-env` Quick Login
+<h1 align="center">Pronamic `wp-env` Quick Login</h1>
 
-Quickly log in as a specified WordPress user in your `wp-env` environment.
+<p align="center">
+	Quickly log in as a specified WordPress user in your `wp-env` environment.
+</p>
+
+## Table of contents
+
+- [Getting Started](#getting-started)
+- [Links](#links)
+
+## Getting Started
+
+### Installation
+
+Add the `pronamic/wp-env-quick-login` to the `plugins` fields in your `.wp-env.json` file:
+
+**`.wp-env.json`**
+
+```json
+{
+	"core": null,
+	"plugins": [
+		"pronamic/wp-env-quick-login"
+	]
+}
+```
 
 ## Inspired by the "One-click admin" feature from [Local](https://localwp.com/)
 
@@ -63,3 +87,12 @@ $GLOBALS['wp_filter'] = array(
 ```
 
 _Source: https://github.com/roots/bedrock/issues/672#issuecomment-1481851251_
+
+## Links
+
+- https://www.pronamic.eu/
+- https://developer.wordpress.org/playground/
+- https://solid-plugs.gitbook.io/solidplugs/wordpress-plugins/wordpress-demo-login-credentials
+- https://tastewp.com/
+- https://instawp.com/
+- https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/
