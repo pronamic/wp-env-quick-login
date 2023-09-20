@@ -1,4 +1,4 @@
-# Pronamic `wp-env` quick login
+# Pronamic `wp-env` Quick Login
 
 Quickly log in as a specified WordPress user in your `wp-env` environment.
 
